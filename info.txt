@@ -1,0 +1,1 @@
+FIXED: Plugin update info
