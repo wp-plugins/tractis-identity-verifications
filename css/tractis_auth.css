@@ -1,0 +1,35 @@
+cite.fn img {
+  vertical-align: middle;
+  margin-right: 5px;
+  }
+
+div.certified {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 5px;
+  /* propietary values */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  }
+  
+  div.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+  }
+  
+    div.auth {
+      float: left;
+      width: 70px;
+      height: 48px;
+      background: url(../images/tractis_icon_48x48.png) no-repeat center top;
+      padding-top: 50px;
+      text-align: center;
+      }
+  
+  div.certdata {
+    float: left;
+    width: 80%;
+    }
+  
+  div.certdata h3 { margin: 0; }
