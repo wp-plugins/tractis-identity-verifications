@@ -53,7 +53,7 @@ Yes, in order to store the user information the plugin makes the next database c
 == Changelog ==
 
 = 1.2 =
-* Fixed Tractis Isologo showed in comments from normal WP users
+* Fixed Tractis Isologo showed in comments from normal WordPress users
 
 = 1.1 =
 * Changed plugin name and copy
