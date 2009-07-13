@@ -5,7 +5,7 @@
  Description: Allow your users to proof their real identity in your blog. Your users will be able to identify in your blog using their electronic ID and they will show their verified identity in their comments.
  Author: Tractis
  Author URI: https://www.tractis.com/identity_verifications
- Version: 1.1
+ Version: 1.2
  License: MIT
  */
 
@@ -45,7 +45,7 @@ define ('TRACTIS_AUTH_PLUGIN_LANG', TRACTIS_AUTH_PLUGIN_BASENAME."/lang");
 define ('TRACTIS_AUTH_PLUGIN_IMAGES', TRACTIS_AUTH_PLUGIN_URL."/images");
 define ('TRACTIS_AUTH_PLUGIN_CSS', TRACTIS_AUTH_PLUGIN_URL."/css");
 define ('TRACTIS_AUTH_PLUGIN_VIEWS', TRACTIS_AUTH_PLUGIN_PATH."/views");
-define ('TRACTIS_AUTH_PLUGIN_REVISION', '1.1');
+define ('TRACTIS_AUTH_PLUGIN_REVISION', '1.2');
 
 // Main class 
 
@@ -142,28 +142,6 @@ if (!class_exists("tractis_auth"))
 			}
 			return $links;
 		} 	  
-		
-		/**
-		 * Add plugin updates and info of the new version
-		 */  
-		function add_plugin_updates($links, $file) {
-			static $this_plugin;
-			global $wp_version;
-			
-			if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
-			
-			if ($file == $this_plugin ) {
-				$current = get_option('update_plugins');
-				if (!isset($current->response[$file])) return false;
-				
-				$columns = substr($wp_version, 0, 3) == "2.8" ? 3 : 5;
-				$url = "http://svn.wp-plugins.org/tractis-identity-verifications/tags/".TRACTIS_AUTH_PLUGIN_REVISION."/info.txt";
-				$update = wp_remote_fopen($url);
-				echo '<td colspan="'.$columns.'">';
-				echo $update;
-				echo '</td>';
-			}
-		}
 	    
 	    function register_widget() {
 			if (!function_exists('register_sidebar_widget')) return;		
@@ -223,7 +201,7 @@ if (!class_exists("tractis_auth"))
 		function get_comment_author_url($url){
 			global $comment;
 			
-			if ($comment->tractis_auth_user != "" && $comment->tractis_auth_user != "0"){
+			if (isset($comment->tractis_auth_user) && $comment->tractis_auth_user != "" && $comment->tractis_auth_user != "0"){
 				return get_usermeta($comment->user_id,'verification_url');			
 			}
 			return $url;
@@ -232,7 +210,7 @@ if (!class_exists("tractis_auth"))
 		function get_comment_author_link($html) {
 			global $comment;
 			
-			if ($comment->tractis_auth_user != "" && $comment->tractis_auth_user != "0"){ 
+			if (isset($comment->tractis_auth_user) && $comment->tractis_auth_user != "" && $comment->tractis_auth_user != "0"){ 
 				$html = '<img src="'.TRACTIS_AUTH_PLUGIN_IMAGES.'/tractis_icon_16x16.png" />'.$html;
 			}
 			return $html;	
@@ -336,8 +314,5 @@ if (class_exists("tractis_auth")) {
 	
 	// Register Plugin action for the settings in the plugin list
 	add_filter('plugin_action_links', array(&$tractis_auth, 'add_plugin_action_settings'), -10, 2);
-	
-	// Show updates of the version of the plugin
-	add_action('after_plugin_row', array(&$tractis_auth, 'add_plugin_updates'), 10, 2);
 	
 ?>

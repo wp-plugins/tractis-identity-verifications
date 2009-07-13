@@ -5,7 +5,7 @@ Author URI: https://www.tractis.com
 Plugin URI: https://www.tractis.com/identity_verifications
 Requires at least: 2.0.2
 Tested up to: 2.8
-Stable tag: 1.1
+Stable tag: 1.2
 
 Your users will be able to identify in your blog using their electronic ID and they will show their verified identity in their comments.
 
@@ -21,7 +21,7 @@ This plugin requires php_openssl module working on your php installation in orde
 1. Unzip the file
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. [Obtain your API Key on Tractis](https://www.tractis.com/identity_verifications)
-1. Configure your plugin through 'Tractis Identity Verifications' in the 'Settigns' menu in WordPress: paste your API Key and choose the button for your blog.
+1. Configure your plugin through 'Tractis Identity Verifications' in the 'Settings' menu in WordPress: paste your API Key and choose the button for your blog.
 1. Place `<?php widget_TractisAuth(); ?>`
 
 If your theme supports widgets you can enable the Tractis Identity Verifications widget to show the button.

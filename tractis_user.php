@@ -31,7 +31,7 @@
 		
 		function initialize() {
 			$user = wp_get_current_user();
-			if ($user->tractis_auth_userid = 0 || $user->tractis_auth_userid == "") {
+			if (!$user->tractis_auth_userid || $user->tractis_auth_userid = 0 || $user->tractis_auth_userid == "") {
 				// Not a tractis user
 				return false;
 			} else {
