@@ -38,7 +38,7 @@ if (! defined('WP_PLUGIN_DIR'))
 if (! defined('WP_PLUGIN_URL'))
     define('WP_PLUGIN_URL', WP_CONTENT_URL . '/plugins');
 
-define ('TRACTIS_AUTH_PLUGIN_BASENAME', plugin_basename(dirname(__FILE__)));
+define ('TRACTIS_AUTH_PLUGIN_BASENAME', basename(plugin_basename(dirname(__FILE__))));
 define ('TRACTIS_AUTH_PLUGIN_PATH', WP_PLUGIN_DIR."/".TRACTIS_AUTH_PLUGIN_BASENAME);
 define ('TRACTIS_AUTH_PLUGIN_URL', WP_PLUGIN_URL."/".TRACTIS_AUTH_PLUGIN_BASENAME);
 define ('TRACTIS_AUTH_PLUGIN_LANG', TRACTIS_AUTH_PLUGIN_BASENAME."/lang");
