@@ -5,7 +5,7 @@ Author URI: https://www.tractis.com
 Plugin URI: https://www.tractis.com/identity_verifications
 Requires at least: 2.0.2
 Tested up to: 2.8
-Stable tag: 1.2
+Stable tag: 1.3
 
 Your users will be able to identify in your blog using their electronic ID and they will show their verified identity in their comments.
 
@@ -51,6 +51,9 @@ Yes, in order to store the user information the plugin makes the next database c
 > ALTER TABLE $prefix+users ADD `tractis_auth_userid` varchar(250) NOT NULL DEFAULT '0'
 
 == Changelog ==
+
+= 1.3 =
+* Fixed path on symlink plugins dir
 
 = 1.2 =
 * Fixed Tractis Isologo showed in comments from normal WordPress users
