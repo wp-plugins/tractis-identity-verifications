@@ -17,7 +17,7 @@
 		if ($default_role != "subscriber")
 		{
 			$message .= __("Warning: The default role for new users in your WordPress config is: ", "tractis_auth").$default_role."<br /><br />"; 
-			$message .= __(" * Set your default role to \"subscriber\" (Settings->New User Default Role) unless you want identifed users to publish and/or manage content. Read more about roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>here</a>.", "tractis_auth")."<br />";
+			$message .= __("Set your blog's default role for users to \"subscriber\" (Settings->New User Default Role) unless you want identifed users to publish and/or manage content. Read more about roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>here</a>.", "tractis_auth")."<br />";
 		}	
 		
 	    if (isset($_POST['tractis_auth_updateSettings'])) {
