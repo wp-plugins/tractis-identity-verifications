@@ -26,7 +26,7 @@ https://www.tractis.com/help/?p=4145
 == Changelog ==
 
 = 1.4 =
-* Capitalization of cert name (display_name) and docu updates
+* Capitalization of cert name (display_name) and documentation updates
 
 = 1.3.1 =
 * Alert blog admin if default rol on user creation is different to suscriber (read only)
