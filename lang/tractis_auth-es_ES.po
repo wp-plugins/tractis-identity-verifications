@@ -25,7 +25,7 @@ msgstr "Atención: El rol por defecto para usuarios nuevos en tu configuración 
 
 #: tractis_ui.php:20
 msgid "Set your blog's default role for users to \"subscriber\" (Settings->New User Default Role) unless you want identifed users to publish and/or manage content. Read more about roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>here</a>."
-msgstr "Configura el rol por defecto de los usuarios de tu blog como \"subscriber\" (Preferencias->"
+msgstr "Configura el rol por defecto de los usuarios de tu blog como \"subscriber\" (Preferencias->New User Default Role) a menos que quieras que los usuarios identificados puedan publicar y/o gestionar contenido. Lee más sobre los roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>aquí</a>."
 
 #: tractis_ui.php:33
 msgid "Settings Updated. (Warning, the api key must be filled to work)"
