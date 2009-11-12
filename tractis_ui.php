@@ -16,8 +16,8 @@
 		
 		if ($default_role != "subscriber")
 		{
-			$message .= __("Warning: The default role for new users in your Wordpress config is: ", "tractis_auth").$default_role."<br /><br />"; 
-			$message .= __(" * We recommend that you use the suscriber role or other with read permissions (Settings->New User Default Role), <a href='http://codex.wordpress.org/Roles_and_Capabilities'>read more here</a>.", "tractis_auth")."<br />";
+			$message .= __("Warning: The default role for new users in your WordPress config is: ", "tractis_auth").$default_role."<br /><br />"; 
+			$message .= __(" * Set your default role to \"subscriber\" (Settings->New User Default Role) unless you want identifed users to publish and/or manage content. Read more about roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>here</a>.", "tractis_auth")."<br />";
 		}	
 		
 	    if (isset($_POST['tractis_auth_updateSettings'])) {
@@ -30,7 +30,7 @@
 	        }
 	        
 	        if (!$_POST['tractis_auth_api_key'] || $_POST['tractis_auth_api_key'] == "") {
-	        	$message .= __("Settings Updated. (Warning, the api key must be filled to work LINK A LA HELP)", "tractis_auth");
+	        	$message .= __("Settings Updated. (Warning, the api key must be filled to work)", "tractis_auth");
 	        } else {
 	        	$message .= __("Settings Updated.", "tractis_auth");
 	        }

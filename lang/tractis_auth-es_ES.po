@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tractis Certified Profiles for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-02 16:54+0100\n"
+"POT-Creation-Date: 2009-11-12 18:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ernesto Jiménez <ernesto.jimenez@negonation.com>\n"
 "Language-Team: Tractis <info@tractis.com>\n"
@@ -18,6 +18,22 @@ msgstr ""
 #: tractis_auth.php:140
 msgid "Settings"
 msgstr "Preferencias"
+
+#: tractis_ui.php:19
+msgid "Warning: The default role for new users in your WordPress config is: "
+msgstr "Atención: El rol por defecto para usuarios nuevos en tu configuración de WordPress es: "
+
+#: tractis_ui.php:20
+msgid " * Set your default role to \"subscriber\" (Settings->New User Default Role) unless you want identifed users to publish and/or manage content. Read more about roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>here</a>."
+msgstr "* Configura tu rol por defecto como \"subscriber\""
+
+#: tractis_ui.php:33
+msgid "Settings Updated. (Warning, the api key must be filled to work)"
+msgstr "Preferencias actualizadas. (Atención, tienes que configurar la API Key para que funcione)"
+
+#: tractis_ui.php:35
+msgid "Settings Updated."
+msgstr "Preferencias actualizadas."
 
 #: views/ui_settings.php:12
 msgid "Tractis Identity Verifications Settings"
