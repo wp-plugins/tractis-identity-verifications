@@ -5,7 +5,7 @@
  Description: Allow your users to proof their real identity in your blog. Your users will be able to identify in your blog using their electronic ID and they will show their verified identity in their comments.
  Author: Tractis
  Author URI: https://www.tractis.com/identity_verifications
- Version: 1.3
+ Version: 1.3.1
  License: MIT
  */
 
@@ -45,7 +45,7 @@ define ('TRACTIS_AUTH_PLUGIN_LANG', TRACTIS_AUTH_PLUGIN_BASENAME."/lang");
 define ('TRACTIS_AUTH_PLUGIN_IMAGES', TRACTIS_AUTH_PLUGIN_URL."/images");
 define ('TRACTIS_AUTH_PLUGIN_CSS', TRACTIS_AUTH_PLUGIN_URL."/css");
 define ('TRACTIS_AUTH_PLUGIN_VIEWS', TRACTIS_AUTH_PLUGIN_PATH."/views");
-define ('TRACTIS_AUTH_PLUGIN_REVISION', '1.3');
+define ('TRACTIS_AUTH_PLUGIN_REVISION', '1.3.1');
 
 // Main class 
 
