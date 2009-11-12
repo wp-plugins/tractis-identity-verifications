@@ -19,9 +19,9 @@
 		
 		function tractis_user($params = array()) {
 			if (!empty($params)) {
-				$this->user_login = $this->prefix . hash('md5', $params['tractis:attribute:dni'].$params['tractis:attribute:name']);
+				$this->user_login = $this->prefix . hash('md5', $params['tractis:attribute:dni'].ucwords($params['tractis:attribute:name']));
 				$this->user_pass = substr( md5( uniqid( microtime() ).$_SERVER["REMOTE_ADDR"] ), 0, 15);
-				$this->user_nicename = $this->display_name = $params['tractis:attribute:name'];
+				$this->user_nicename = $this->display_name = ucwords($params['tractis:attribute:name']);
 				$this->user_url = $this->default_url;
 				$this->issuer = $params['tractis:attribute:issuer'];
 				$this->verification_url = $params['verification_url'];			
@@ -62,8 +62,8 @@
 						$user_data = array();
 						$user_data['user_login'] = $this->user_login;
 						$user_data['user_pass'] = $this->user_pass;
-						$user_data['user_nicename'] = ucwords($this->user_nicename);
-						$user_data['display_name'] = ucwords($this->display_name);
+						$user_data['user_nicename'] = $this->user_nicename;
+						$user_data['display_name'] = $this->display_name;
 						$user_data['user_url'] = $this->user_url;
 						
 						$wpid = wp_insert_user($user_data);
@@ -72,7 +72,7 @@
 						// Set the issuer in the usermeta table
 						update_usermeta($wpid, "tractis_auth_issuer", $this->issuer);
 						update_usermeta($wpid, "verification_url", $this->verification_url);
-						update_usermeta($wpid, "first_name", ucwords($this->display_name));
+						update_usermeta($wpid, "first_name", $this->display_name);
 					}
 				}elseif(is_user_logged_in() && $user->fbconnect_userid != $this->user_login){ // El usuario WP no está asociado al de FB
 					$this->set_userid($user->ID, $this->user_login);
