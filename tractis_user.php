@@ -19,9 +19,9 @@
 		
 		function tractis_user($params = array()) {
 			if (!empty($params)) {
-				$this->user_login = $this->prefix . hash('md5', $params['tractis:attribute:dni'].ucwords($params['tractis:attribute:name']));
+				$this->user_login = $this->prefix . hash('md5', $params['tractis:attribute:dni'].$params['tractis:attribute:name']);
 				$this->user_pass = substr( md5( uniqid( microtime() ).$_SERVER["REMOTE_ADDR"] ), 0, 15);
-				$this->user_nicename = $this->display_name = ucwords($params['tractis:attribute:name']);
+				$this->user_nicename = $this->display_name = ucwords(strtolower($params['tractis:attribute:name']));
 				$this->user_url = $this->default_url;
 				$this->issuer = $params['tractis:attribute:issuer'];
 				$this->verification_url = $params['verification_url'];			
