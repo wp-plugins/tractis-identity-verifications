@@ -62,7 +62,7 @@
 						$user_data = array();
 						$user_data['user_login'] = $this->user_login;
 						$user_data['user_pass'] = $this->user_pass;
-						$user_data['user_nicename'] = $this->user_nicename;
+						$user_data['user_nicename'] = ucwords($this->user_nicename);
 						$user_data['display_name'] = $this->display_name;
 						$user_data['user_url'] = $this->user_url;
 						
