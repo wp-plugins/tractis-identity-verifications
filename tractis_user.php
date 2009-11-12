@@ -72,7 +72,7 @@
 						// Set the issuer in the usermeta table
 						update_usermeta($wpid, "tractis_auth_issuer", $this->issuer);
 						update_usermeta($wpid, "verification_url", $this->verification_url);
-						update_usermeta($wpid, "first_name", $this->display_name);
+						update_usermeta($wpid, "first_name", ucwords($this->display_name));
 					}
 				}elseif(is_user_logged_in() && $user->fbconnect_userid != $this->user_login){ // El usuario WP no está asociado al de FB
 					$this->set_userid($user->ID, $this->user_login);
