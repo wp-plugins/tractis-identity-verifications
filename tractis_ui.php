@@ -10,7 +10,12 @@
 		global $tractis_auth_settings;
 		
 		$message = "";
-
+		
+		// Check for openssl extension enabled in PHP
+		if (!extension_loaded('openssl')) {
+			$message .= __("Problem: Your PHP installation doesn't have the openssl module enabled. Is required for communicate with Tractis in https (secure mode), see the <a href='http://php.net/manual/en/book.openssl.php'>php manual</a> to get more info.", "tractis_auth")."<br /><br />";
+		}
+		
 		// Review default role on user creation to show a warning to the blog-admin
 		$default_role = get_option('default_role');
 		

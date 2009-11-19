@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tractis Certified Profiles for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-12 19:42+0100\n"
+"POT-Creation-Date: 2009-11-19 17:59+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ernesto Jiménez <ernesto.jimenez@negonation.com>\n"
+"Last-Translator: Jose Luis Gordo Romero <jose.gordo@tractis.com>\n"
 "Language-Team: Tractis <info@tractis.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,19 +19,23 @@ msgstr ""
 msgid "Settings"
 msgstr "Preferencias"
 
-#: tractis_ui.php:19
+#: tractis_ui.php:16
+msgid "Problem: Your PHP installation doesn't have the openssl module enabled. Is required for communicate with Tractis in https (secure mode), see the <a href='http://php.net/manual/en/book.openssl.php'>php manual</a> to get more info."
+msgstr "Problema: Tu instalación de PHP no tiene el módulo de openssl habilitado. Es necesario para poderse comunicar con Tractis vía https (modo seguro), puedes encontrar más información en el <a href='http://php.net/manual/en/book.openssl.php'>manual de PHP</a>."
+
+#: tractis_ui.php:24
 msgid "Warning: The default role for new users in your WordPress config is: "
 msgstr "Atención: El rol por defecto para usuarios nuevos en tu configuración de WordPress es: "
 
-#: tractis_ui.php:20
+#: tractis_ui.php:25
 msgid "Set your blog's default role for users to \"subscriber\" (Settings->New User Default Role) unless you want identifed users to publish and/or manage content. Read more about roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>here</a>."
 msgstr "Configura el rol por defecto de los usuarios de tu blog como \"subscriber\" (Preferencias->New User Default Role) a menos que quieras que los usuarios identificados puedan publicar y/o gestionar contenido. Lee más sobre los roles <a href='http://codex.wordpress.org/Roles_and_Capabilities'>aquí</a>."
 
-#: tractis_ui.php:33
+#: tractis_ui.php:38
 msgid "Settings Updated. (Warning, the api key must be filled to work)"
 msgstr "Preferencias actualizadas. (Atención, tienes que configurar la API Key para que funcione)"
 
-#: tractis_ui.php:35
+#: tractis_ui.php:40
 msgid "Settings Updated."
 msgstr "Preferencias actualizadas."
 

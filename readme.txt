@@ -5,7 +5,7 @@ Author URI: https://www.tractis.com/identity
 Plugin URI: https://www.tractis.com/wordpress
 Requires at least: 2.0.2
 Tested up to: 2.8
-Stable tag: 1.4
+Stable tag: 1.4.1
 
 Your users will be able to identify in your blog using their electronic ID and they will show their verified identity in their comments.
 
@@ -24,6 +24,9 @@ https://www.tractis.com/help/?p=4145
 https://www.tractis.com/help/?p=4145
 
 == Changelog ==
+
+= 1.4.1 =
+* Settings detects if PHP openssl is enabled
 
 = 1.4 =
 * Capitalization of cert name (display_name) and documentation updates
