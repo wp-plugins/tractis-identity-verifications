@@ -5,7 +5,7 @@ Author URI: https://www.tractis.com/identity
 Plugin URI: https://www.tractis.com/wordpress
 Requires at least: 2.0.2
 Tested up to: 2.9
-Stable tag: 1.4.2
+Stable tag: 1.4.3
 
 Your users will be able to identify in your blog using their electronic ID and they will show their verified identity in their comments.
 
@@ -24,6 +24,9 @@ https://www.tractis.com/help/?p=4145
 https://www.tractis.com/help/?p=4145
 
 == Changelog ==
+
+= 1.4.3 =
+* Compability fixes
 
 = 1.4.2 =
 * No need to update from 1.4.1, tested WordPress 2.9 compatibility (2.9 RC1)

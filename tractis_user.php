@@ -65,6 +65,7 @@
 						$user_data['user_nicename'] = $this->user_nicename;
 						$user_data['display_name'] = $this->display_name;
 						$user_data['user_url'] = $this->user_url;
+						$user_data['user_email'] = $this->user_login."@".$this->user_login.".com";
 						
 						$wpid = wp_insert_user($user_data);
 						$this->set_userid($wpid, $this->user_login);
