@@ -49,7 +49,9 @@ If yow want to collaborate to translate the plugin to other languages, send us a
 
 = Additional information =
 
-Please, visit the [Tractis Identity Verifications Plugin Help](https://www.tractis.com/wordpress) for additional information send us an email to <verifications@tractis.com>.
+Please, visit the [Tractis Identity Verifications Plugin Help](https://www.tractis.com/wordpress).
+
+If you need additional information, send us an email to <verifications@tractis.com>.
 
 == Installation ==
 
@@ -62,6 +64,8 @@ Any doubts or comments, send us an email to <verifications@tractis.com>.
 == Frequently Asked Questions ==
 
 Please, visit the [Tractis Identity Verifications Plugin Help](https://www.tractis.com/wordpress) for Frequently Asked Questions about the plugin.
+
+Any doubts or comments, send us an email to <verifications@tractis.com>.
 
 == Screenshots ==
 1. Identity verification button.
